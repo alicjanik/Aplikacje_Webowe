@@ -1,0 +1,255 @@
+<html lang="pl">
+  <head>
+    <title>LOTR - formularze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .header {
+        display: flex;
+        background-color: #AEC8A4;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Quintessential', fantasy;
+      }
+
+      .text {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        font-family: 'Quintessential', fantasy;
+        color: #3B3B1A;
+        font-size: large;
+      }
+      .body {
+        display: flex;
+        background-color: #E7EFC7;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 10px 20px;
+      }
+      footer {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #AEC8A4;
+        align-items: center;
+        padding: 3px 10px;
+        height: 50px;
+      }
+
+      a:link, a:visited {
+        margin: 10px;
+        text-decoration: none;
+        color: #3B3B1A;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        a {
+          margin: 5px 0;
+        }
+
+        .body {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .text {
+          width: 90%;
+          max-width: none;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="color: #3B3B1A;">Świat władcy pierścieni</h1>
+      <div>
+        <nav>
+          <a href="home.html"> Home </a>
+          <a href="guessing.html"> Sprawdź kim jesteś! </a>
+          <a href="guessing.html"> Skonatkuj się ze mną </a>
+          <a href="gallery.html"> Galeria </a>
+        </nav>
+      </div>
+    </div>
+    <div class="body">
+      <div class="text">
+        <h2>Sprawdź, do jakiej rasy Śródziemia najbardziej pasujesz!</h2>
+        <form id="quiz">
+            <p>Wybierz swoją ulubioną broń:</p>
+            <input type="radio" id="sword" name="weapon" value="sword">
+            <label for="sword">Miecz</label><br>
+            <input type="radio" id="bow" name="weapon" value="bow">
+            <label for="bow">Łuk</label><br>
+            <input type="radio" id="axe" name="weapon" value="axe">
+            <label for="axe">Topór</label><br><br>
+
+            <p>Gdy coś tworzysz wolisz, żeby to było:</p>
+            <input type="radio" id="strong" name="creation" value="strong">
+            <label for="strong">Wytrzymałe</label><br> 
+            <input type="radio" id="beautiful" name="creation" value="beautiful">
+            <label for="beautiful">Piękne</label><br>
+            <input type="radio" id="mocking" name="creation" value="mocking">
+            <label for="mocking">Prześmiewcze</label><br>
+            <input type="radio" id="practical" name="creation" value="practical">
+            <label for="practical">Praktyczne</label><br><br>
+
+            <p>Jaka jest twoja ulubiona pora dnia?</p>
+            <input type="radio" id="morning" name="time" value="morning">
+            <label for="morning">Poranek</label><br>
+            <input type="radio" id="afternoon" name="time" value="afternoon">
+            <label for="afternoon">Popołudnie</label><br>
+            <input type="radio" id="dusk" name="time" value="dusk">
+            <label for="dusk">Zmierzch</label><br>
+            <input type="radio" id="dawn" name="time" value="dawn">
+            <label for="dawn">Świt</label><br>
+            <input type="radio" id="night" name="time" value="night">
+            <label for="night">Noc</label><br><br>
+
+            <p>Gdzie najbardziej chciałbyś mieszkać?</p>
+            <input type="radio" id="mountains" name="terrain" value="mountains">
+            <label for="mountains">Góry</label><br>
+            <input type="radio" id="forests" name="terrain" value="forests">
+            <label for="forests">Lasy</label><br>
+            <input type="radio" id="plains" name="terrain" value="plains">
+            <label for="plains">Równiny</label><br>
+            <input type="radio" id="cities" name="terrain" value="cities">
+            <label for="cities">Miasta</label><br>
+            <input type="radio" id="hills" name="terrain" value="hills">
+            <label for="hills">Pagórki</label><br><br>
+
+            <p>Co najbardziej lubisz robić:</p>
+            <input type="radio" id="play" name="activity" value="play">
+            <label for="play">Bawić się i odpoczywać</label><br>
+            <input type="radio" id="craft" name="activity" value="craft">
+            <label for="craft">Tworzyć rzeczy</label><br>
+            <input type="radio" id="art" name="activity" value="art">
+            <label for="art">Tworzyć sztukę i muzykę</label><br>
+            <input type="radio" id="fight" name="activity" value="fight">
+            <label for="fight">Rywalizować</label><br>
+            <input type="radio" id="work" name="activity" value="work">
+            <label for="work">Pracować</label><br><br>
+            
+            <input type="submit" value="Sprawdź wynik">
+            <p id="wynik" style="font-size: x-large;"></p>
+        </form>
+      </div>
+      <div class="text">
+        <p>Skontaktuj się:</p>
+        <form>
+            <label for="email">Podaj swój e-mail i napisz wiadomość:</label><br>
+            <input type="text" id="email" name="email" placeholder="example@ex.com" required><br>
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Wybierz temat</option>
+                <option value="question">Pytanie</option>
+                <option value="suggestion">Sugestia</option>
+                <option value="other">Inne</option>
+            </select><br>
+            <textarea id="message" name="message" rows="4" cols="30" placeholder="Twoja wiadomość" required></textarea><br><br>
+            <input type="submit" value="Wyślij">
+      </div>
+    </div>
+    <footer>
+      <p style="color: #3B3B1A">Alicja Janik</p>
+    </footer>
+    <script>
+      document.getElementById("quiz").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const answers = {
+        weapon: document.querySelector('input[name="weapon"]:checked'),
+        creation: document.querySelector('input[name="creation"]:checked'),
+        time: document.querySelector('input[name="time"]:checked'),
+        terrain: document.querySelector('input[name="terrain"]:checked'),
+        activity: document.querySelector('input[name="activity"]:checked')
+      };
+
+      for (let key in answers) {
+        if (!answers[key]) {
+          document.getElementById("wynik").textContent = "Zaznacz odpowiedź na wszystkie pytania!";
+          return;
+        }
+      }
+
+      const points = {
+        orc: 0,
+        elf: 0,
+        dwarf: 0,
+        human: 0,
+        hobbit: 0
+      };
+
+      switch (answers.weapon.value) {
+        case "bow": points.elf++; points.human++; points.orc++; break;
+        case "axe": points.dwarf++; break;
+        case "sword": points.human++; points.elf++; points.hobbit++; points.orc++; break;
+      }
+
+      switch (answers.creation.value) {
+        case "strong": points.dwarf++; break;
+        case "beautiful": points.elf++; break;
+        case "practical": points.human++; points.hobbit++; break;
+        case "mocking": points.orc++; break;
+      }
+
+      switch (answers.time.value) {
+        case "morning": points.human++; break;
+        case "afternoon": points.hobbit++; break;
+        case "dusk": points.elf++; break;
+        case "night": points.orc++; break;
+        case "dawn": points.elf++; break;
+      }
+
+      switch (answers.terrain.value) {
+        case "mountains": points.dwarf++; points.orc++; break;
+        case "forests": points.elf++; break;
+        case "plains": points.human++; break;
+        case "cities": points.human++; break;
+        case "hills": points.hobbit++; break;
+      }
+
+      switch (answers.activity.value) {
+        case "play": points.hobbit++; break;
+        case "craft": points.dwarf++; break;
+        case "art": points.elf++; break;
+        case "fight": points.human++; points.orc++; break;
+        case "work": points.human++; points.hobbit++; break;
+      }
+
+      let wynik = Object.keys(points).reduce((a, b) => points[a] > points[b] ? a : b);
+
+      const opisy = {
+        orc: "Najbardziej przypominasz orka!",
+        elf: "Najbardziej przypominasz elfa!",
+        dwarf: "Najbardziej przypominasz krasnoluda!",
+        human: "Najbardziej przypominasz człowieka!",
+        hobbit: "Najbardziej przypominasz hobbita!"
+      };
+
+      document.getElementById("wynik").textContent = opisy[wynik];
+    });
+    </script>
+  </body>
+</html>

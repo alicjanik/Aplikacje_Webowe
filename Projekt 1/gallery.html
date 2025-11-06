@@ -1,0 +1,154 @@
+<html lang="pl">
+  <head>
+    <title>LOTR - galeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .header {
+        display: flex;
+        background-color: #AEC8A4;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Quintessential', fantasy;
+        text-align: center;
+      }
+
+      .body {
+        display: flex;
+        background-color: #E7EFC7;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        flex: 1;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Quintessential', fantasy;
+        color: #3B3B1A;
+        border-radius: 12px;
+        padding: 10px;
+        flex: 1 1 300px;
+        max-width: 400px;
+        font-size: large;
+      }
+
+      .text img {
+        flex-direction: column;
+        width: 100%;
+        height: 400px; 
+        object-fit: contain;
+        border-radius: 8px;
+        margin-top: 10px;
+        display: block;
+      }
+
+      footer {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #AEC8A4;
+        align-items: center;
+        padding: 3px 10px;
+        height: 50px;
+      }
+
+      a:link, a:visited {
+        margin: 10px;
+        text-decoration: none;
+        color: #3B3B1A;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        a {
+          margin: 5px 0;
+        }
+
+        .body {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .text {
+          width: 90%;
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 style="color: #3B3B1A;">Świat Władcy Pierścieni</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="guessing.html">Sprawdź kim jesteś!</a>
+        <a href="guessing.html">Skontaktuj się ze mną</a>
+        <a href="gallery.html">Galeria</a>
+      </nav>
+    </div>
+
+    <div class="body">
+      <div class="text">
+        <p>Okładka pierwszego wydania "Władcy Pierścieni"</p>
+        <img src="First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif" alt="Okładka pierwszego wydania">
+      </div>
+
+      <div class="text">
+        <p>Mapa Śródziemia</p>
+        <img src="Map_of_Middle-Earth.svg" alt="Mapa Śródziemia">
+      </div>
+
+      <div class="text">
+        <p>Ilustracja norki hobbita</p>
+        <img src="hobbit house.jpg" alt="Norka hobbita">
+      </div>
+
+      <div class="text">
+        <p>Dom hobbita z planu filmowego</p>
+        <img src="hobbiton.jpg" alt="Hobbiton">
+      </div>     
+      
+      <div class="text">
+        <p>Ilustracja inspirowana opisem widoku z Rivendell</p>
+        <img src="rivendell view.jpg" alt="Gandalf">
+      </div>
+      
+      <div class="text">
+        <p>Filmik przedstawiający Pierścień i Saurona - jego twórcę</p>
+        <video width="320" height="240" controls>
+          <source src="lotr video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+    <footer>
+      <p style="color: #3B3B1A">Alicja Janik</p>
+    </footer>
+  </body>
+</html>
