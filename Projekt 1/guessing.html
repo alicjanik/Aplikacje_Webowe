@@ -1,6 +1,6 @@
 <html lang="pl">
   <head>
-    <title>LOTR - formularze</title>
+    <title>Śródziemie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,6 +8,9 @@
     <style>
       body {
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
 
       .header {
@@ -84,12 +87,11 @@
   </head>
   <body>
     <div class="header">
-      <h1 style="color: #3B3B1A;">Świat władcy pierścieni</h1>
+      <h1 style="color: #3B3B1A;">Świat Władcy Pierścieni</h1>
       <div>
         <nav>
           <a href="home.html"> Home </a>
-          <a href="guessing.html"> Sprawdź kim jesteś! </a>
-          <a href="guessing.html"> Skonatkuj się ze mną </a>
+          <a href="guessing.html"> Sprawdź kim jesteś! / Kontakt </a>
           <a href="gallery.html"> Galeria </a>
         </nav>
       </div>
@@ -152,7 +154,7 @@
             <input type="radio" id="work" name="activity" value="work">
             <label for="work">Pracować</label><br><br>
             
-            <input type="submit" value="Sprawdź wynik">
+            <input type="submit" value="Sprawdź wynik" style="font-family: 'Quintessential', fantasy; font-size: large; color: #3B3B1A;">
             <p id="wynik" style="font-size: x-large;"></p>
         </form>
       </div>
@@ -160,15 +162,15 @@
         <p>Skontaktuj się:</p>
         <form>
             <label for="email">Podaj swój e-mail i napisz wiadomość:</label><br>
-            <input type="text" id="email" name="email" placeholder="example@ex.com" required><br>
-            <select id="subject" name="subject" required>
+            <input type="text" id="email" name="email" placeholder="example@ex.com" required style="font-family: 'Quintessential', fantasy; font-size: large; color: #3B3B1A;"><br>
+            <select id="subject" name="subject" required style="font-family: 'Quintessential', fantasy; font-size: large; color: #3B3B1A;">
                 <option value="" disabled selected>Wybierz temat</option>
                 <option value="question">Pytanie</option>
                 <option value="suggestion">Sugestia</option>
                 <option value="other">Inne</option>
             </select><br>
-            <textarea id="message" name="message" rows="4" cols="30" placeholder="Twoja wiadomość" required></textarea><br><br>
-            <input type="submit" value="Wyślij">
+            <textarea id="message" name="message" rows="6" cols="30" placeholder="Twoja wiadomość" required style="font-family: 'Quintessential', fantasy; font-size: large; color: #3B3B1A;"></textarea><br><br>
+            <input type="submit" value="Wyślij" style="font-family: 'Quintessential', fantasy; font-size: large; color: #3B3B1A;">
       </div>
     </div>
     <footer>
